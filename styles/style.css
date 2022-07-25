@@ -1,5 +1,6 @@
-.table__text_margin {
-  margin: 0 0 20px 0;
+.logo {
+  width: 228px;
+  height: 32px;
 }
 
 .text-color__white {
@@ -7,7 +8,40 @@
 }
 
 .logo {
-  background-image: url(../images/logo_place_header.svg);
+  width: 228px;
+  height: 32px;
+}
+
+.table {
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 0 auto;
+}
+
+.table__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+}
+
+.table__text_margin {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.footer__column-links_paragraph {
+  padding: 0;
+  margin: 0;
+}
+
+.footer_column-link_none-underline {
+  text-decoration: none;
 }
 
 .page {
@@ -31,16 +65,16 @@
   flex-direction: row;
   align-items: center;
   position: relative;
+  margin: 0 0 100px 0;
   /* выше установили ограничения для секции */
 }
 
 .logo_plase_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
   left: 64px;
   z-index: 4;
-  width: 228px;
-  height: 32px;
 }
 
 .header__title {
@@ -90,48 +124,67 @@
 .description {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  border: 1px solid red;
+  margin: 0 0 100px 0;
+}
+
+.description__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+
 }
 
 .two-columns {
   width: 175px;
-  border: 1px solid red;
 }
 
 .two-columns__paragraph {
-  border: 1px solid red;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.two-columns__paragraph:last-child {
+  margin: 0px;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  justify-content: space-between;
-  border: 1px solid red;
-}
-.colums {
-  width: 80%;
-  min-width: 784px;
-  justify-content: space-between;
-  flex-wrap: nowrap;
 }
 
 .two-columns__brief {
-  font-size: 10px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .digits {
-  padding: 100px 0 100px 0;
+  margin: 0 0 100px 0;
 }
 
 .section-title {
   width: 60%;
   text-align: center;
   padding: 0;
-  margin: 100px auto 20px auto;
+  margin: 0 auto 20px auto;
   font-size: 60px;
   font-weight: 600;
   line-height: 1.15;
+  position: relative;
+  z-index: 1;
 }
 
 .section-subtitle {
@@ -143,35 +196,14 @@
   line-height: 34px;
   padding: 0;
   margin: 0 auto 0 auto;
-}
-
-.table {
-  display: flex;
-  width: 1100px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 100px auto;
+  position: relative;
+  z-index: 1;
 }
 
 .table__cell {
   width: 250px;
   padding: 0;
   margin: 60px 0 0 0;
-}
-
-.table__heading {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.15;
-  margin: 0 0 20px 0;
-}
-
-.table__text_margin {
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
 }
 
 .feynman {
@@ -227,6 +259,7 @@
   font-weight: normal;
   line-height: 51px;
   text-decoration: none;
+  z-index: 3;
   color: #2f80ed;
 }
 
@@ -234,6 +267,8 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 90px 0 90px 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -255,11 +290,54 @@
 
 .footer {
   min-height: 350px;
-  border: 1px solid red;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 60px 0 40px 0;
 }
 
 .footer__columns {
-  flex-basis: 711px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   width: 90%;
-  border: 1px solid red;
+}
+
+.footer__columns_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  justify-content: start;
+}
+
+.footer__autor {
+  justify-content: end;
+  margin: 18px 0;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 16px 0;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0 10px 0 0;
 }
