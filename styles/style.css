@@ -3,13 +3,29 @@
   height: 32px;
 }
 
-.text-color__white {
-  color: white;
+.section-title {
+  width: 60%;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
 }
 
-.logo {
-  width: 228px;
-  height: 32px;
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .table {
@@ -23,25 +39,16 @@
 }
 
 .table__heading {
+  line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  line-height: 1.15;
   margin: 0 0 20px 0;
 }
 
-.table__text_margin {
+.table__text {
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  line-height: 1.2;
-}
-
-.footer__column-links_paragraph {
-  padding: 0;
-  margin: 0;
-}
-
-.footer_column-link_none-underline {
-  text-decoration: none;
 }
 
 .page {
@@ -65,7 +72,6 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-  margin: 0 0 100px 0;
   /* выше установили ограничения для секции */
 }
 
@@ -124,27 +130,23 @@
 .description {
   display: flex;
   justify-content: center;
-  margin: 0 0 100px 0;
-}
-
-.description__columns {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-
+  box-sizing: border-box;
+  padding: 100px 0 100px 0;
 }
 
 .two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
   width: 175px;
-}
-
-.two-columns__paragraph {
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
-.two-columns__paragraph:last-child {
-  margin: 0px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -152,17 +154,16 @@
   min-width: 784px;
 }
 
-.two-columns__brief {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: #2f80ed;
-}
-
 .two-columns__paragraph {
+  padding: 0;
+  margin: 0 0 30px 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.two-columns__paragraph:last-child {
+  margin: 0px;
 }
 
 .two-columns__span-accent {
@@ -172,32 +173,8 @@
 }
 
 .digits {
-  margin: 0 0 100px 0;
-}
-
-.section-title {
-  width: 60%;
-  text-align: center;
-  padding: 0;
-  margin: 0 auto 20px auto;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
-  position: relative;
-  z-index: 1;
-}
-
-.section-subtitle {
-  width: 60%;
-  text-align: center;
-  padding: 0;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-  padding: 0;
-  margin: 0 auto 0 auto;
-  position: relative;
-  z-index: 1;
+  box-sizing: border-box;
+  padding: 0 0 100px 0;
 }
 
 .table__cell {
@@ -221,22 +198,16 @@
   z-index: 0;
 }
 
-.feynman__title-block {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-}
-
 .feynman__title {
+  margin: 0 auto 0 auto;
+  padding: 100px 0 0 0;
   text-align: center;
   position: relative;
-  font-size: 120px;
   line-height: 1.15;
+  font-size: 120px;
   font-weight: 600;
   z-index: 3;
   width: 648px;
-  margin: 0;
-  padding: 0;
 }
 
 .feynman__subtitle {
@@ -246,7 +217,6 @@
   font-weight: normal;
   line-height: 51px;
   z-index: 3;
-  padding-top: 70px;
   margin: 0;
   padding: 70px 0 0 0;
 }
@@ -269,6 +239,14 @@
   overflow: hidden;
   box-sizing: border-box;
   padding: 90px 0 90px 0;
+}
+
+.section-title_dark {
+  color: white;
+}
+
+.section-subtitle_dark {
+  color: white;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -319,9 +297,11 @@
 .footer__autor {
   justify-content: end;
   margin: 18px 0;
+  color: white;
 }
 
 .footer__column-heading {
+  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -329,10 +309,18 @@
 }
 
 .footer__column-links {
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0 0 16px 0;
+  padding: 0;
+  margin: 0;
 }
 
 .social-icon {
