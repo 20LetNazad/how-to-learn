@@ -21,4 +21,4 @@
 ## :computer: Инструкция по запуску
 
 -      Клонируйте проект на свой компьютер (git clone git@github.com:20LetNazad/how-to-learn.git)
--      Откройе index.html в корне проекта
+-      Откройте index.html в корне проекта
